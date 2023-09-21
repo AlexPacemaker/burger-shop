@@ -10,10 +10,13 @@ const Tag = ({
   href,
   className,
   ...props
-}: ITag) => {
+}: ITag): JSX.Element => {
   return (
-    <div className={cn(styles.Tag, className, styles[size])} {...props}>
-      {children}
+    <div
+      className={cn(styles.Tag, className, styles[size], styles[color])}
+      {...props}
+    >
+      {href ? <a href={href}>{children}</a> : <>{children}</>}
     </div>
   );
 };
