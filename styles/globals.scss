@@ -1,3 +1,10 @@
+* {
+  width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  user-select: none;
+}
+
 html,
 body {
   margin: 0;
@@ -13,10 +20,6 @@ a {
   text-decoration: none;
 
   color: inherit;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .visualyHidden {
