@@ -5,10 +5,9 @@ import cn from "classnames";
 
 const Button = ({ children, buttonType, ...props }: IButton) => {
   return (
-    <button
-      className={cn(styles.button, [styles.buttonType])}
-      {...props}
-    ></button>
+    <button className={cn(styles.button, styles[buttonType])} {...props}>
+      {children}
+    </button>
   );
 };
 
