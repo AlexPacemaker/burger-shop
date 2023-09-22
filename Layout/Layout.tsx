@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Layout.module.scss";
 import { ILayout } from "./Layout.props";
 import cn from "classnames";
-import { Header } from "./Header/Header";
-import { Sidebar } from "./Sidebar/Sidebar";
-import { Footer } from "./Footer/Footer";
+import Header from "./Header/Header";
+import Sidebar from "./Sidebar/Sidebar";
+import Footer from "./Footer/Footer";
 import { FunctionComponent } from "react";
 
 const Layout = ({ children }: ILayout): JSX.Element => {
