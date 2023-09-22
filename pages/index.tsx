@@ -1,10 +1,13 @@
 import Button from "@/Components/Button/Button";
 import Paragraph from "@/Components/Paragraph/Paragraph";
+import Rating from "@/Components/Rating/Rating";
 import Tag from "@/Components/Tag/Tag";
 import Title from "@/Components/Title/Title";
-import React from "react";
+import React, { useState } from "react";
 
 const Home = (): JSX.Element => {
+  const [rating, setRating] = useState<number>(3);
+
   return (
     <>
       <Title attr='h1'>Title h1!</Title>
@@ -27,6 +30,7 @@ const Home = (): JSX.Element => {
       <Tag color='primary' size='m'>
         Green
       </Tag>
+      <Rating rating={rating} setRating={setRating} isEditable />
     </>
   );
 };
