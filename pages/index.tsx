@@ -3,6 +3,7 @@ import Paragraph from "@/Components/Paragraph/Paragraph";
 import Rating from "@/Components/Rating/Rating";
 import Tag from "@/Components/Tag/Tag";
 import Title from "@/Components/Title/Title";
+import { withLayout } from "@/Layout/Layout";
 import React, { useState } from "react";
 
 const Home = (): JSX.Element => {
@@ -35,4 +36,4 @@ const Home = (): JSX.Element => {
   );
 };
 
-export default Home;
+export default withLayout(Home);
